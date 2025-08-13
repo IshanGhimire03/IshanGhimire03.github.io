@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ishan Ghimire | Software Engineer</title>
+  <meta name="description" content="Software engineer focused on full-stack development, clean architecture, and measurable impact." />
+  <style>
+    :root{--bg:#0f172a;--muted:#94a3b8;--text:#e5e7eb;--brand:#6366f1;--brand2:#22d3ee;--max:960px}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(160deg,var(--bg),#0b1025);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
+    .wrap{max-width:var(--max);margin:0 auto;padding:40px 20px}
+    header{
+      display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;
+      background:linear-gradient(90deg,rgba(99,102,241,.12),rgba(34,211,238,.12));
+      border:1px solid rgba(148,163,184,.12);border-radius:16px;padding:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25)
+    }
+    .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.9)}
+    h1{margin:0;font-size:1.9rem;line-height:1.2}
+    .tag{margin-top:6px;color:var(--muted)}
+    main{display:grid;gap:20px;margin-top:24px}
+    .card{background:rgba(255,255,255,.03);border:1px solid rgba(148,163,184,.14);border-radius:16px;padding:24px}
+    h2{margin:0 0 12px;font-size:1.1rem;color:#fff}
+    .row{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(99,102,241,.18);border:1px solid rgba(99,102,241,.3);color:#e0e7ff;font-weight:600}
+    a{color:#a5b4fc;text-decoration:none}
+    .btn{display:inline-block;margin-top:10px;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;font-weight:700;box-shadow:0 8px 20px rgba(34,211,238,.25)}
+    footer{text-align:center;color:var(--muted);margin:26px 0 8px}
+    @media (max-width:680px){header{grid-template-columns:1fr;text-align:center}.avatar{margin:0 auto}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="Ishan_Profile_Pic.jpeg" alt="Portrait of Ishan Ghimire" />
+      <div>
+        <h1>Ishan Ghimire</h1>
+        <div class="tag">Software Engineer • Full-Stack • Problem Solver</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" aria-labelledby="about"><h2 id="about">About</h2>
+        <p>I’m a software engineer who ships clean, reliable products. I work across the stack—designing APIs, building resilient services, and crafting accessible UIs. I value thoughtful engineering, measurable impact, and teams that move with clarity.</p>
+      </section>
+
+      <section class="card" aria-labelledby="skills"><h2 id="skills">Skills</h2>
+        <div class="row">
+          <span class="pill">Python</span><span class="pill">Java</span><span class="pill">JavaScript</span><span class="pill">C++</span>
+          <span class="pill">React</span><span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">Django</span>
+          <span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">MongoDB</span>
+          <span class="pill">REST APIs</span><span class="pill">Git & GitHub</span><span class="pill">Agile</span>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="projects"><h2 id="projects">Selected Work</h2>
+        <p><strong>Portfolio Website:</strong> This site—fast, static, and deployed on GitHub Pages.</p>
+        <p><strong>Full-Stack Apps:</strong> Responsive apps with modern front ends, REST back ends, and relational/NoSQL data stores.</p>
+      </section>
+
+      <section class="card" aria-labelledby="contact"><h2 id="contact">Contact</h2>
+        <p>Email: <a href="mailto:ishanghimire03@gmail.com">ishanghimire03@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/ishanghimire03" target="_blank" rel="noopener">github.com/ishanghimire03</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ishan-ghimire" target="_blank" rel="noopener">linkedin.com/in/ishan-ghimire</a></p>
+        <a class="btn" href="IshanGhimire_Resume.pdf" download>Download Resume</a>
+      </section>
+    </main>
+
+    <footer>© <span id="y"></span> Ishan Ghimire</footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
