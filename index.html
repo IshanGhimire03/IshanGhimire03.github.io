@@ -4,18 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ishan Ghimire | Software Engineer</title>
-  <meta name="description" content="Software engineer focused on full-stack development, clean architecture, and measurable impact." />
+  <meta name="description" content="Ishan Ghimire — CS student at UT Dallas. Java/Python developer with experience in Spring Boot APIs, data migration, and cloud deployment." />
   <style>
     :root{--bg:#0f172a;--muted:#94a3b8;--text:#e5e7eb;--brand:#6366f1;--brand2:#22d3ee;--max:960px}
     *{box-sizing:border-box}
     body{margin:0;background:linear-gradient(160deg,var(--bg),#0b1025);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
     .wrap{max-width:var(--max);margin:0 auto;padding:40px 20px}
-    header{
-      display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;
-      background:linear-gradient(90deg,rgba(99,102,241,.12),rgba(34,211,238,.12));
-      border:1px solid rgba(148,163,184,.12);border-radius:16px;padding:24px;
-      box-shadow:0 10px 30px rgba(0,0,0,.25)
-    }
+    header{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;background:linear-gradient(90deg,rgba(99,102,241,.12),rgba(34,211,238,.12));border:1px solid rgba(148,163,184,.12);border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
     .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.9)}
     h1{margin:0;font-size:1.9rem;line-height:1.2}
     .tag{margin-top:6px;color:var(--muted)}
@@ -26,6 +21,8 @@
     .pill{display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(99,102,241,.18);border:1px solid rgba(99,102,241,.3);color:#e0e7ff;font-weight:600}
     a{color:#a5b4fc;text-decoration:none}
     .btn{display:inline-block;margin-top:10px;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;font-weight:700;box-shadow:0 8px 20px rgba(34,211,238,.25)}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:4px 0}
     footer{text-align:center;color:var(--muted);margin:26px 0 8px}
     @media (max-width:680px){header{grid-template-columns:1fr;text-align:center}.avatar{margin:0 auto}}
   </style>
@@ -36,34 +33,69 @@
       <img class="avatar" src="Ishan_Profile_Pic.jpeg" alt="Portrait of Ishan Ghimire" />
       <div>
         <h1>Ishan Ghimire</h1>
-        <div class="tag">Software Engineer • Full-Stack • Problem Solver</div>
+        <div class="tag">
+          <a href="tel:+19729559202">(972) 955 9202</a> ·
+          <a href="mailto:ishanghimire55@gmail.com">ishanghimire55@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/ishan-ghimire-98a495229/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://ishanghimire03.github.io/" target="_blank" rel="noopener">Portfolio</a>
+        </div>
+        <div style="margin-top:10px">
+          <a class="btn" href="Ishan_Ghimire_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="card" aria-labelledby="about"><h2 id="about">About</h2>
-        <p>I’m a software engineer who ships clean, reliable products. I work across the stackdesigning APIs, building resilient services, and crafting accessible UIs. I value thoughtful engineering, measurable impact, and teams that move with clarity.</p>
+      <!-- ABOUT -->
+      <section class="card" aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p>
+          CS student at The University of Texas at Dallas (B.S., expected Dec 2026). I build practical, reliable software in Java and Python,
+          with experience shipping Spring Boot APIs, validating data migrations (DB2 → Yugabyte), and deploying to PCF. Comfortable with Git-based collaboration
+          and modern tooling (Gradle, Thunder Client), I enjoy turning specs into clean, working features.
+        </p>
       </section>
 
-      <section class="card" aria-labelledby="skills"><h2 id="skills">Skills</h2>
-        <div class="row">
-          <span class="pill">Python</span><span class="pill">Java</span><span class="pill">JavaScript</span><span class="pill">C++</span>
-          <span class="pill">React</span><span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">Django</span>
-          <span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">MongoDB</span>
-          <span class="pill">REST APIs</span><span class="pill">Git & GitHub</span><span class="pill">Agile</span>
-        </div>
+      <!-- SKILLS -->
+      <section class="card" aria-labelledby="skills">
+        <h2 id="skills">Technical Skills</h2>
+        <p><strong>Programming Languages:</strong> C++, C, Java, Python, MIPS Assembly, SQL</p>
+        <p><strong>Tools:</strong> Visual Studio, VS Code, Git, Atom, Microsoft Office, IDLE, Gradle, Spring Boot, PCF, Thunder Client, GitHub, Bitbucket</p>
+        <p><strong>Relevant Coursework:</strong> Discrete I & II, Data Structures & Algorithms, Programming Language Paradigms, Probability & Statistics, UNIX, Software Engineering</p>
       </section>
 
-      <section class="card" aria-labelledby="projects"><h2 id="projects">Selected Work</h2>
-        <p><strong>Portfolio Website:</strong> This site—fast, static, and deployed on GitHub Pages.</p>
-        <p><strong>Full-Stack Apps:</strong> Responsive apps with modern front ends, REST back ends, and relational/NoSQL data stores.</p>
+      <!-- EXPERIENCE -->
+      <section class="card" aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+
+        <h3>Software Engineer Intern — Charles Schwab, Westlake, TX <span style="color:#94a3b8; font-weight:normal">| Jun 2024 – Aug 2024</span></h3>
+        <ul class="list">
+          <li>Developed and deployed a Java REST API endpoint in Spring Boot to retrieve customer phone numbers, improving lookup efficiency by ~20%.</li>
+          <li>Validated migration of 100k+ records from DB2 to Yugabyte, ensuring 100% match accuracy for legacy-to-modern conversion.</li>
+          <li>Used Gradle for builds, Thunder Client for API testing, and PCF for scalable deployment; collaborated via Bitbucket with peer reviews.</li>
+        </ul>
+
+        <h3>Customer Service Worker — Prospect, Euless, TX <span style="color:#94a3b8; font-weight:normal">| May 2022 – Aug 2022</span></h3>
+        <ul class="list">
+          <li>Assisted passengers and resolved issues, achieving a 95%+ customer satisfaction rating.</li>
+        </ul>
+
+        <h3>Campaign Manager — Dinesh Sharma House Campaign <span style="color:#94a3b8; font-weight:normal">| Jan 2022 – Mar 2022</span></h3>
+        <ul class="list">
+          <li>Executed outreach via canvassing, calls, texts, and emails; led peer teams to enhance strategies.</li>
+        </ul>
+
+        <h3>Campaign Manager — Tika Euless City Council Place 6 <span style="color:#94a3b8; font-weight:normal">| May 2021 – Jul 2021</span></h3>
+        <ul class="list">
+          <li>Led volunteer team to canvass 500+ households and develop targeted persuasion strategies; increased voter turnout by 7%.</li>
+        </ul>
       </section>
 
-      <section class="card" aria-labelledby="contact"><h2 id="contact">Contact</h2>
-        <p>Email: <a href="mailto:ishanghimire03@gmail.com">ishanghimire03@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/ishanghimire03" target="_blank" rel="noopener">github.com/ishanghimire03</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ishan-ghimire-98a495229/" target="_blank" rel="noopener">linkedin.com/in/ishan-ghimire</a></p>
-        <a class="btn" href="IshanGhimire_Resume.pdf" download>Download Resume</a>
+      <!-- PROJECTS -->
+      <section class="card" aria-labelledby="projects">
+        <h2 id="projects">Projects</h2>
+        <h3>Google Home (Python)</h3>
+        <p>Built a Python-based voice assistant using SpeechRecognition for speech-to-text and text-to-speech; added web search and time retrieval with robust error handling.</p>
       </section>
     </main>
 
